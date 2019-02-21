@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:background="@drawable/img_person"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="趙中龍"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:text="我的订单"
+        android:textColor="#FF121212"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="#FFDCDCDC" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tv_qbdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/p_dingdan"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="全部订单"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/tv_wzf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/p_weizhifu"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="未支付"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/tv_yzf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/p_yizhifu"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="已支付"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/tv_ywc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/p_yiwancheng"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="已完成"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <com.guo.method.ZrcListView
+        android:id="@+id/zListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1" >
+    </com.guo.method.ZrcListView>
+
+</LinearLayout>

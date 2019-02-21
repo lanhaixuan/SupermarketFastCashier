@@ -1,0 +1,8 @@
+LCD_Init();
+
+POINT_COLOR=BLACK;
+
+LCD_Clear(WHITE);
+
+
+在进行屏幕切换时  应在下一个屏幕的前面加一句清屏 LCD_Clear(WHITE);

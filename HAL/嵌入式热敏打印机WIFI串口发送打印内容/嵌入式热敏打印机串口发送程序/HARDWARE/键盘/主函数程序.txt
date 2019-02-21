@@ -1,0 +1,51 @@
+#include "stm32f10x.h"
+#include "Key_GPIO_Init.h"
+#include "sys.h"
+#include "delay.h"
+
+/******************************
+本程序在扫描键值时并没有进行消抖处理
+在调用本程序时 应加上延时函数
+
+除八个按键接口外 还有一个接口接3.3V输入 可以选择不接
+除电压外 前四个分别接G1 2 3 4 口 设置为输出模式
+后四口G5 6 7 8 设置为输入模式
+
+头文件应包含
+#include "sys.h"
+#include "delay.h"
+用于延时
+
+消抖延时
+delay_ms(30);
+if(GPIO_ReadInputDataBit(GPIOG,GPIO_Pin_8) == 1)  //再判断
+{
+	return 8;
+}
+******************************/
+
+uint16_t Getkey;
+uint16_t Key_1;
+uint16_t Key_2;
+uint16_t Key_3;
+uint16_t Key_4;
+uint16_t Key_5;
+uint16_t Key_6;
+uint16_t Key_7;
+uint16_t Key_8;
+	
+int main()
+{
+	Key_GPIO_Init();  //
+		
+	while(1)
+	{
+		Getkey = Get_Key_Init();  //
+		Key_4 = GPIO_ReadOutputDataBit(GPIOG,GPIO_Pin_4);
+		Key_6 = GPIO_ReadInputDataBit(GPIOG,GPIO_Pin_6);
+		Key_7 = GPIO_ReadInputDataBit(GPIOG,GPIO_Pin_7);
+		Key_8 = GPIO_ReadInputDataBit(GPIOG,GPIO_Pin_8);
+	}
+
+
+}

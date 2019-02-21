@@ -1,0 +1,153 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#CD5C5C" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/tab_item_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="2dip"
+                        android:drawableTop="@drawable/index"
+                        android:gravity="center"
+                        android:padding="12dip"
+                        android:text="首页"
+                        android:textColor="@drawable/tab_text_color"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <RadioButton
+                        android:id="@+id/tab_item_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/tab_hotcommodities"
+                        android:drawablePadding="2dip"
+                        android:gravity="center"
+                        android:text="分类"
+                        android:textColor="@drawable/tab_text_color"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <RadioButton
+                        android:id="@+id/tab_item_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableTop="@drawable/saoyisao"
+                        android:padding="12dip"
+                        android:text="扫一扫"
+                        android:textColor="@drawable/tab_text_color"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/tab_item_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="2dip"
+                        android:drawableTop="@drawable/nav_cart_s"
+                        android:gravity="center"
+                        android:padding="12dip"
+                        android:text="购物车"
+                        android:textColor="@drawable/tab_text_color"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/tab_item_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawablePadding="2dip"
+                        android:drawableTop="@drawable/nav_person_s"
+                        android:gravity="center"
+                        android:padding="12dip"
+                        android:text="我"
+                        android:textColor="@drawable/tab_text_color"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

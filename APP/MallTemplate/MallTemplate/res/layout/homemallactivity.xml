@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5" >
+
+    <com.guo.method.ZrcListView
+        android:id="@+id/zListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1" >
+    </com.guo.method.ZrcListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ccffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#FF121212"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#cccccc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ccffffff" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="全选"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="合计: ￥88.00"
+            android:textColor="#FFFB5E57"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:background="#FFCD4E48"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:text="结算"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

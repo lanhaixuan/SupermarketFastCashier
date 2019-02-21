@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_iamge"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_sp1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="格兰如安波尔多红葡萄酒750ml"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_weizhi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="酒水区 三区 二排货架"
+            android:textColor="#FF63656A"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_jiage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="left"
+            android:text="￥98.00"
+            android:textColor="#FFFB5E57" />
+    </LinearLayout>
+
+</LinearLayout>

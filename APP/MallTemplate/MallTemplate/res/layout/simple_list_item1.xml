@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_3" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="85dip"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@+id/iv_image"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="格兰如安波尔多红葡萄酒750ml"
+                android:textColor="#FF121212" />
+
+            <TextView
+                android:id="@+id/tv_jiage"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="￥79.00"
+                android:textColor="#FFFB5E57"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="8dip"
+                android:text="规格: 750ml"
+                android:textColor="#FF63656A"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_nubler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/tv_jiage"
+                android:text="1件"
+                android:textColor="#FF121212"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:text="￥79.00"
+            android:textColor="#FFFB5E57" />
+
+        <TextView
+            android:id="@+id/tv_iszhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/relativeLayout1"
+            android:layout_alignRight="@+id/textView2"
+            android:text="未支付"
+            android:textColor="#0000ff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>
